@@ -1,6 +1,6 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter
-void main() {
+public static void main(String[] args) {
     Registration registration = new Registration();
 registration.Register();
 
@@ -13,5 +13,8 @@ String loginPass = gon.nextLine();
 
 Login login = new Login(registration.Username, registration.Password, registration.firstName, registration.lastName);
 System.out.println(login.loginUser(loginUser,loginPass));
+if(login.isLoggedIn()){
+    QuickChat.startChat();
+    }
 }
 
