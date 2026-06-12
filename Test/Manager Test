@@ -1,0 +1,118 @@
+import org.junit.jupiter.api.Test;
+
+public class ManagerTest {
+
+    @Test
+    public void testAddMessage() {
+        ManagerTest.addMessage(
+                "1001",
+                "0812345678",
+                "Hello World",
+                "HASH001"
+        );
+
+        System.out.println("Message added successfully.");
+    }
+
+    @Test
+    public void testDisplayRecipients() {
+        ManagerTest.addMessage(
+                "1002",
+                "0823456789",
+                "Test Message",
+                "HASH002"
+        );
+
+        ManagerTest.displayRecipients();
+    }
+
+    private static void displayRecipients() {
+        
+    }
+
+    private static void addMessage(String number, String number1, String testMessage, String hash002) {
+    }
+
+    @Test
+    public void testDisplayLongestMessage() {
+        ManagerTest.addMessage(
+                "1003",
+                "0834567890",
+                "Short",
+                "HASH003"
+        );
+
+        ManagerTest.addMessage(
+                "1004",
+                "0845678901",
+                "This is the longest message in the test",
+                "HASH004"
+        );
+
+        ManagerTest.displayLongestMessage();
+    }
+
+    private static void displayLongestMessage() {
+    }
+
+    @Test
+    public void testSearchByMessageId() {
+        ManagerTest.addMessage(
+                "1005",
+                "0856789012",
+                "Search Test",
+                "HASH005"
+        );
+
+        ManagerTest.searchByMessageId("1005");
+    }
+
+    private static void searchByMessageId(String number) {
+    }
+
+    @Test
+    public void testSearchMessagesByRecipient() {
+        ManagerTest.addMessage(
+                "1006",
+                "0867890123",
+                "Recipient Test",
+                "HASH006"
+        );
+
+        ManagerTest.searchMessagesByRecipient("0867890123");
+    }
+
+    private static void searchMessagesByRecipient(String number) {
+    }
+
+    @Test
+    public void testDeleteMessageByHash() {
+        ManagerTest.addMessage(
+                "1007",
+                "0878901234",
+                "Delete Me",
+                "HASH007"
+        );
+
+        ManagerTest.deleteMessageByHash("HASH007");
+    }
+
+    private static void deleteMessageByHash(String hash007) {
+    }
+
+    @Test
+    public void testDisplayFullReport() {
+        ManagerTest.addMessage(
+                "1008",
+                "0889012345",
+                "Report Message",
+                "HASH008"
+        );
+
+        ManagerTest.displayFullReport();
+    }
+
+    private static void displayFullReport() {
+        
+    }
+}
